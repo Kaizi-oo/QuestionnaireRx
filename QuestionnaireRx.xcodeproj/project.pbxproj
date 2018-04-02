@@ -16,6 +16,11 @@
 		8DFE4B1520720F75008FD810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFE4B1320720F75008FD810 /* LaunchScreen.storyboard */; };
 		8DFE4B2020720F75008FD810 /* QuestionnaireRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B1F20720F75008FD810 /* QuestionnaireRxTests.swift */; };
 		8DFE4B2B20720F75008FD810 /* QuestionnaireRxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B2A20720F75008FD810 /* QuestionnaireRxUITests.swift */; };
+		8DFE4B40207213AC008FD810 /* DataSource.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DFE4B3F207213AB008FD810 /* DataSource.txt */; };
+		8DFE4B492072151E008FD810 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B482072151E008FD810 /* BaseViewController.swift */; };
+		8DFE4B4C2072166C008FD810 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B4B2072166C008FD810 /* Question.swift */; };
+		8DFE4B4E20721B89008FD810 /* QuestionnaireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B4D20721B89008FD810 /* QuestionnaireViewModel.swift */; };
+		8DFE4B50207222EC008FD810 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE4B4F207222EC008FD810 /* QuestionnaireViewController.swift */; };
 		C921E43F00ADBDE82809D52E /* Pods_QuestionnaireRxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9825AF0487097615C9EF75B8 /* Pods_QuestionnaireRxUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,11 @@
 		8DFE4B2620720F75008FD810 /* QuestionnaireRxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionnaireRxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFE4B2A20720F75008FD810 /* QuestionnaireRxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireRxUITests.swift; sourceTree = "<group>"; };
 		8DFE4B2C20720F75008FD810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFE4B3F207213AB008FD810 /* DataSource.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSource.txt; sourceTree = "<group>"; };
+		8DFE4B482072151E008FD810 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8DFE4B4B2072166C008FD810 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8DFE4B4D20721B89008FD810 /* QuestionnaireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewModel.swift; sourceTree = "<group>"; };
+		8DFE4B4F207222EC008FD810 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		8F2354E136109D0AE49C0C1E /* Pods-QuestionnaireRxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionnaireRxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionnaireRxTests/Pods-QuestionnaireRxTests.release.xcconfig"; sourceTree = "<group>"; };
 		9825AF0487097615C9EF75B8 /* Pods_QuestionnaireRxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionnaireRxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E879BDB36CA10E0D07C2389 /* Pods-QuestionnaireRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionnaireRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionnaireRx/Pods-QuestionnaireRx.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +147,12 @@
 		8DFE4B0920720F75008FD810 /* QuestionnaireRx */ = {
 			isa = PBXGroup;
 			children = (
+				8DFE4B4A20721621008FD810 /* Helper */,
+				8DFE4B47207214FF008FD810 /* Extensions */,
+				8DFE4B462072148B008FD810 /* Tools */,
+				8DFE4B412072140F008FD810 /* Model */,
+				8DFE4B4320721428008FD810 /* View */,
+				8DFE4B422072141D008FD810 /* ViewModel */,
 				8DFE4B0A20720F75008FD810 /* AppDelegate.swift */,
 				8DFE4B0C20720F75008FD810 /* ViewController.swift */,
 				8DFE4B0E20720F75008FD810 /* Main.storyboard */,
@@ -163,6 +179,69 @@
 				8DFE4B2C20720F75008FD810 /* Info.plist */,
 			);
 			path = QuestionnaireRxUITests;
+			sourceTree = "<group>";
+		};
+		8DFE4B412072140F008FD810 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B4B2072166C008FD810 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DFE4B422072141D008FD810 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B4D20721B89008FD810 /* QuestionnaireViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DFE4B4320721428008FD810 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B4520721476008FD810 /* View */,
+				8DFE4B4420721450008FD810 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DFE4B4420721450008FD810 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B4F207222EC008FD810 /* QuestionnaireViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DFE4B4520721476008FD810 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DFE4B462072148B008FD810 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B482072151E008FD810 /* BaseViewController.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8DFE4B47207214FF008FD810 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DFE4B4A20721621008FD810 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE4B3F207213AB008FD810 /* DataSource.txt */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +363,7 @@
 				8DFE4B1520720F75008FD810 /* LaunchScreen.storyboard in Resources */,
 				8DFE4B1220720F75008FD810 /* Assets.xcassets in Resources */,
 				8DFE4B1020720F75008FD810 /* Main.storyboard in Resources */,
+				8DFE4B40207213AC008FD810 /* DataSource.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,8 +544,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFE4B50207222EC008FD810 /* QuestionnaireViewController.swift in Sources */,
 				8DFE4B0D20720F75008FD810 /* ViewController.swift in Sources */,
+				8DFE4B4C2072166C008FD810 /* Question.swift in Sources */,
 				8DFE4B0B20720F75008FD810 /* AppDelegate.swift in Sources */,
+				8DFE4B492072151E008FD810 /* BaseViewController.swift in Sources */,
+				8DFE4B4E20721B89008FD810 /* QuestionnaireViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
